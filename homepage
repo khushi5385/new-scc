@@ -1,194 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            margin: 0;
-            overflow: hidden;
-        }
-        header {
-    background: #333;
-    color: #fff;
-    padding: 15px 20px;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.search {
-    text-align: center;
-    margin: 20px;
-}
-
-.search input {
-    padding: 10px;
-    width: 60%;
-    max-width: 400px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.search button {
-    padding: 10px 15px;
-    background: #2c2d2f;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.search button:hover {
-    background: #0056b3;
-}
-
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            width: 320px;
-            opacity: 0;
-            transform: translateY(-20px);
-            animation: fadeIn 0.8s ease-out forwards;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .input-container {
-            position: relative;
-            width: 90%;
-            margin: 10px auto;
-        }
-        .input-field {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-        input {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            transition: 0.3s;
-            box-sizing: border-box;
-        }
-        input:focus {
-            border-color: #007BFF;
-            box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
-            outline: none;
-        }
-        .eye-icon {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-            font-size: 18px;
-        }
-        button {
-            width: 100%;
-            padding: 12px;
-            background: #323335;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        button:hover {
-            background: #414852;
-            transform: scale(1.05);
-        }
-        p {
-            margin-top: 15px;
-        }
-        a {
-            color: #090a0b;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        a:hover {
-            text-decoration: underline;
-            color: #22272c;
-        }
-    </style>
+<title>my web </title>
 </head>
 <body>
-    <header>
-        <h1>APEX Paper </h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Past Papers</a></li>
-                <li><a href="#">Subjects</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="file:///C:/Users/pc/OneDrive/Desktop/khushi.html/KHUSHI1.HTML/KHUSHI1.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <h2>Login</h2>
-        <form id="loginForm">
-            <div class="input-field">
-                <input type="text" id="loginUsername" placeholder="Username" required>
-            </div>
-            <div class="input-container">
-                <input type="password" id="loginPassword" placeholder="Password" required>
-                <span class="eye-icon" onclick="togglePassword()">&#128065;</span>
-            </div>
-            <button type="submit">Login</button>
-        </form>
-        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
-    </div>
-    
-    <script>
-        function togglePassword() {
-            let passwordField = document.getElementById("loginPassword");
-            if (passwordField.type === "password") {
-                passwordField.type = "text";
-            } else {
-                passwordField.type = "password";
-            }
-        }
+<style>
 
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            let username = document.getElementById("loginUsername").value;
-            let password = document.getElementById("loginPassword").value;
-            alert("Login attempted for: " + username);
-        });
-    </script>
+.logo{width:200px;height:90px;float:left;margin-left:20px;opacity: 0.5;}
+.ul
+{
+margin:0px;padding:0px;
+}
+.ul li{
+display:inline-block;
+margin-left:60px;
+margin-top:15px;
+
+color:black;
+font-size:22px;
+text-decoration:none;
+}
+.container {
+  position: relative;
+  font-family: Arial;
+
+}
+
+.text-block {
+  position: absolute;
+width:400px;
+height:350;
+opacity:0.7;
+  top: 200px;
+  right: 100px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.button3{
+width:120px;
+height:50px;
+text-align:center;
+font-size:25px;
+background:bule;
+}
+.button3:hover{opacity:0.5;}
+.button4{
+width:200px;
+height:50px;
+text-align:center;
+font-size:20px;
+background:bule;
+}
+.button4:hover{opacity:0.5;}
+.background1{
+width:100%;
+height:660px;
+margin-top: 200px;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #008080;
+    color: white;
+    margin-top: 0px;
+    height: 100px;
+}
+</style>
+<header>
+<img src="C:\Users\pc\OneDrive\Desktop\1.jpg" class="logo">
+
+<ul class="ul">
+<li><a href="#" style="text-decoration: none;">About</a></li>
+<li><a href="#" style="text-decoration: none;">Blog</a></li>
+<li><a href="#" style="text-decoration: none;">Travel Resources</a></li>
+<li><a href="#" style="text-decoration: none;">Trains</a></li>
+<li><a href="#" style="text-decoration: none;">Contact</a></li>
+<li><a href="#" style="text-decoration: none;">login</a></li>
+</ul>
+<div class="container">
+<img src="C:\Users\pc\OneDrive\Desktop\2.jpg" class="background" style="margin-top: 0px;height: auto;width:100%;">
+<div class="text-block">
+    <h1>WELCOME!<br>I'M EARL.</h1>
+    <p>Travel is my life.Since 1999,I've been travelling</br>
+around the world nonstop .If you also love travel,</br>
+you're in the right place!</p>
+<p>Let's get started...</p></br>
+<button type="button" class="button3">The Blog</button>
+<button type="button" class="button4">Travel Resources</button>
+  </div>
+</div>
+</header>
+<footer>
+    <p>&copy; 2025 APEX Papers.in. All rights reserved.</p>
+</footer>
 </body>
 </html>
